@@ -18,15 +18,24 @@
     <header class="grid-con" id="main-header">
       <nav
         class="full-width-grid box col-span-full m-col-span-full l-col-span-full"
-        id="header"
-      >
+        id="header">
         Images
       </nav>
     </header>
     <main>
       <section class="grid-con" id="gallery">
         <h2 class="hidden">Images Gallery</h2>
-        <div class="image-container">
+        <div class="col-span-full m-col-start-1 m-col-end-5 l-col-start-3 l-col-end-6">
+            <img src="images/mobile/img_2_small_768X432.jpg"
+            srcset="images/mobile/img_2_small_768X432.jpg 768w,
+                    images/tablet/img_2_medium_1024x576.jpg 1024w,
+                    images/desktop/img_2_large_1600x900.jpg 1600w"
+            sizes="(max-width: 768px) 768px,
+                   (max-width: 1024px) 1024px,
+                   1600px"
+            alt="Image Two">
+        </div>
+        <div class="col-span-full m-col-start-5 m-col-end-8 l-col-start-6 l-col-end-9">
           <img
             src="images/mobile/img_1_small_432X768.jpg"
             srcset="images/mobile/img_1_small_432X768.jpg 432w,
@@ -37,17 +46,7 @@
                      1024px"
             alt="Image One"/>
         </div>
-        <div class="image-container">
-            <img src="images/mobile/img_2_small_768X432.jpg"
-            srcset="images/mobile/img_2_small_768X432.jpg 768w,
-                    images/tablet/img_2_medium_1024x576.jpg 1024w,
-                    images/desktop/img_2_large_1600x900.jpg 1600w"
-            sizes="(max-width: 768px) 768px,
-                   (max-width: 1024px) 1024px,
-                   1600px"
-            alt="Image Two">
-        </div>
-        <div class="image-container">
+        <div class="col-span-full m-col-start-8 m-col-end-12 l-col-start-9 l-col-end-13">
            <img src="images/mobile/img_3_small_768x432.jpg"
             srcset="images/mobile/img_3_small_768x432.jpg 768w,
                     images/tablet/img_3_medium_1024x576.jpg 1024w,
