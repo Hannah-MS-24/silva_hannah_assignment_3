@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Agu+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agu+Display&display=swap"
+      rel="stylesheet"
+    />
     <title>Responsive Grid</title>
     <link href="css/grid.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
@@ -13,15 +16,56 @@
   <body>
     <h1 class="hidden">Responsive Grid</h1>
     <header class="grid-con" id="main-header">
-      <div class="box col-start-1 col-end-4 m-col-start-1 m-col-end-3 l-col-start-1 l-col-end-3" id="main-logo"> Logo </div>
-      <nav class="box col-start-4 col-end-5 m-col-end-2 m-col-end-13 l-col-start-3 l-col-end-13" id="main-nav">Nav</nav>
+      <nav
+        class="full-width-grid box col-span-full m-col-span-full l-col-span-full"
+        id="header"
+      >
+        Images
+      </nav>
     </header>
     <main>
-      
+      <section class="grid-con" id="gallery">
+        <h2 class="hidden">Images Gallery</h2>
+        <div class="image-container">
+          <img
+            src="images/mobile/img_1_small_432X768.jpg"
+            srcset="images/mobile/img_1_small_432X768.jpg 432w,
+                    images/tablet/img_1_medium_576x1024.jpg 576w,
+                    images/desktop/img_1_large_900X1600.jpg 900w"
+            sizes="(max-width: 768px) 432px, 
+                     (max-width: 1024px) 576px, 
+                     1024px"
+            alt="Image One"/>
+        </div>
+        <div class="image-container">
+            <img src="images/mobile/img_2_small_768X432.jpg"
+            srcset="images/mobile/img_2_small_768X432.jpg 768w,
+                    images/tablet/img_2_medium_1024x576.jpg 1024w,
+                    images/desktop/img_2_large_1600x900.jpg 1600w"
+            sizes="(max-width: 768px) 768px,
+                   (max-width: 1024px) 1024px,
+                   1600px"
+            alt="Image Two">
+        </div>
+        <div class="image-container">
+           <img src="images/mobile/img_3_small_768x432.jpg"
+            srcset="images/mobile/img_3_small_768x432.jpg 768w,
+                    images/tablet/img_3_medium_1024x576.jpg 1024w,
+                    images/desktop/img_3_large_1600x900.jpg 1600w"
+            sizes="(max-width: 768px) 768px,
+                   (max-width: 1024px) 1024px, 1600px"
+            alt="Image Three">
+        </div>
+      </section>
     </main>
     <footer>
       <div class="grid-con">
-        <nav class="full-width-grid box col-span-full m-col-span-full l-col-span-full" id="footer-nav">Footer</nav>
+        <nav
+          class="full-width-grid box col-span-full m-col-span-full l-col-span-full"
+          id="footer-nav"
+        >
+          Footer
+        </nav>
       </div>
     </footer>
     <script src="js/main.js"></script>
